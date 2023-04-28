@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 
 public class ProdutoDTO {
 
+    private Long id;
+
     @NotNull
     @Size(min = 1, max = 100)
     private String nome;
@@ -58,4 +60,7 @@ public class ProdutoDTO {
     }
 
 
+    public Long getId() {
+        return this.id ;
+    }
 }
